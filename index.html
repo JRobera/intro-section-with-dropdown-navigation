@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Intro section with dropdown navigation</title>
+  <!--  GOOGLE FONTS   -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Kumbh+Sans:wght@400;700&family=Manrope:wght@500;700&display=swap" rel="stylesheet">
+
+  <!--Custome Css -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  
+  
+</head>
+<body>
+      <nav>
+        
+        <div class="log">
+          <img src="images/logo.svg" alt="">
+        </div>
+        <img src="images/icon-menu.svg" class="btnmenu" onclick="window.showmenu()" alt="ham-menu">
+        <div class="sidemenu">
+            <img src="images/icon-close-menu.svg" class="btnclose" onclick="window.showmenu()" alt="close-menu">
+            <div class="dropdown">
+              <span>Features</span>
+              <div class="arrows arr1" onclick="showfeatu()"></div>
+              <div class="dropitems featu">
+                <p class="items"><img src="images/icon-todo.svg" alt=""> Todo List</p>
+                <p class="items"><img src="images/icon-calendar.svg" alt=""> Calendar</p>
+                <p class="items"><img src="images/icon-reminders.svg" alt=""> Reminders</p>
+                <p class="items"><img src="images/icon-planning.svg" alt=""> Planning</p>
+              </div>
+            </div>
+            <div class="dropdown">
+              <span>Company</span> 
+              <div class="arrows arr2" onclick="showcomp()"></div>
+              <div class="dropitems comp">
+                <p class="items">History</p>
+                <p class="items">Our Team</p>
+                <p class="items">Blog</p>
+              </div>
+          </div>
+          <p><a href="#">Careers</a></p> 
+          <p><a href="#">About</a></p> 
+          <div class="logreg">
+            <p><a href="#">Login</a></p>
+            <p><a href="#">Register</a></p>
+          </div> 
+       </div>
+      
+    </nav>
+
+    <main>
+      <div class="hero-imgs"></div>
+      <h1 class="header"> Make remote work</h1>
+
+      <p class="mainpar">
+        Get your team in sync, no matter your location. Streamline processes, 
+        create team rituals, and watch productivity soar.
+      </p> 
+
+     <a href="#" class="btnlearn">Learn more</a> 
+     
+     <div class="promo">
+      <img src="images/client-databiz.svg" alt="">
+      <img src="images/client-audiophile.svg" alt="">
+      <img src="images/client-meet.svg" alt="">
+      <img src="images/client-maker.svg" alt="">
+     </div>
+
+    </main>
+
+
+<script>
+
+  function showfeatu() {
+    // document.querySelector(".arr1").toggleAttribute("src", "images/icon-arrow-up.svg");
+    document.querySelector(".dropitems.featu").classList.toggle("show");
+    document.querySelector(".dropitems.featu").classList.toggle("pop");
+    document.querySelector(".arr1").classList.toggle("rotate");
+  }
+  function showcomp(){
+    document.querySelector(".arr2").toggleAttribute("src", "images/icon-arrow-up.svg");
+    document.querySelector(".dropitems.comp").classList.toggle("show");
+    document.querySelector(".dropitems.comp").classList.toggle("pop");
+    document.querySelector(".arr2").classList.toggle("rotate");
+  }
+  function showmenu() {
+    document.querySelector(".sidemenu").classList.toggle("showmenu");
+  }
+  function Te12(){
+    alert("hello R");
+  }
+
+</script>
+
+</body>
+</html>
