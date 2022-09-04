@@ -6,6 +6,7 @@
     font-family: 'Manrope', sans-serif;
     font-family: 'Epilogue', sans-serif;
 }
+body {background-color: hsl(0, 0%, 98%);}
 nav {
     position: relative;
 }
@@ -172,7 +173,7 @@ nav a {
         margin-left: 0;
         padding: 20px 15px 10px;
         background-color: white;
-        box-shadow: 0px 0px 10px -2px;
+        box-shadow: 0px 0px 5px -2px;
         margin-right: 5px;
         border-radius: 10px;
     }
