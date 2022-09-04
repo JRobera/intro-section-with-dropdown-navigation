@@ -142,7 +142,7 @@ nav a {
     width: 65px;
 }
 
-@media (min-width: 376px) {
+@media (min-width: 1440px) {
     .log {margin-left: 25px;}
     .sidemenu {
         opacity: 1;
